@@ -1,0 +1,125 @@
+body {
+  background: #1858A4;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+#container {
+  overflow: hidden;
+}
+#header {
+  color: #1858A4;
+  text-align: center;
+  position: relative;
+}
+#header #slogan, #header a {
+  position: relative;
+  z-index: 1;
+}
+#header:after {
+  border-left: 1000px solid transparent;
+  border-right: 1000px solid transparent;
+  border-top: 300px solid #FFFFFF;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -30px;
+  display: block;
+  margin-left: -420px;
+  z-index: 0;
+}
+#header img {
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+#content .main-content {
+  text-align: center;
+  padding-top: 100px;
+}
+#content .main-content p {
+  padding: 20px;
+  margin: 0 auto;
+}
+.file-download .file {
+  text-align: center;
+}
+.file-download a {
+  background: #000000;
+  color: #FFFFFF;
+  display: block;
+  width: 200px;
+  height: 36px;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.file-download .file:first-child a {
+  line-height: 36px;
+}
+#footer {
+  margin-top: 30px;
+}
+#footer .footer-top {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#footer .footer-top .uppercase {
+  font-size: 22px;
+  line-height: 24px;
+}
+#footer .social a {
+  color: #FFFFFF;
+  font-weight: normal;
+}
+#footer .social a.sitelink {
+  font-size: 16px;
+  margin-left: 15px;
+}
+#footer .social img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+#footer .address {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #header:after {
+    margin-left: -500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #header:after {
+    margin-left: -620px;
+  }
+}
+@media (max-width: 767px) {
+  #header {
+    background: #FFFFFF;
+    padding-bottom: 20px;
+  }
+  #header:after {
+    display: none;
+  }
+  #content .main-content {
+    padding-top: 0px;
+  }
+  .file-download .file {
+    margin-bottom: 40px;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer .address {
+    margin-top: 40px;
+  }
+}
