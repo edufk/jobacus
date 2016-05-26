@@ -12,10 +12,14 @@ body {
   color: #1858A4;
   text-align: center;
   position: relative;
+  padding-top: 20px;
 }
 #header #slogan, #header a {
   position: relative;
   z-index: 1;
+}
+#header #slogan {
+  font-size: 18px;
 }
 #header:after {
   border-left: 1000px solid transparent;
